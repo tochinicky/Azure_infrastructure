@@ -24,8 +24,6 @@ resource "azurerm_kubernetes_cluster" "k8s" {
     name                 = "agentpool"
     vm_size              = "Standard_D2_v2"
     node_count           = 1
-    max_count            = 3
-    min_count            = 1
     type                 = "VirtualMachineScaleSets"
     orchestrator_version = "1.30.7"
   }
