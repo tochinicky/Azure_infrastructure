@@ -19,7 +19,7 @@ resource "azurerm_kubernetes_cluster" "k8s" {
   tags = {
     Environment = "Dev"
   }
-
+  #default pool
   default_node_pool {
     name                 = "agentpool"
     vm_size              = "Standard_D2_v2"
